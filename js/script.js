@@ -1,15 +1,17 @@
 (function ($) {
-   $(document).ready(function() {
+   $(document).ready(function() {    
 
 
-      $(".steps-menu__item:first a").addClass('active');
+
+
+      $(".steps-menu__item:first a").addClass('active');   
 
       jQuery(window).scroll(function() {
          var $sections = $('section');
 
-         $sections.each(function(i,el) {
-            var top  = $(el).offset().top*0.80;
-            var bottom = top +$(el).height();
+         $sections.each(function(i, el) {
+            var top  = $(el).offset().top * 0.80;
+            var bottom = top + $(el).height();
             var scroll = $(window).scrollTop();
             var id = $(el).attr('id');
 
@@ -20,7 +22,7 @@
                $('a[href="#'+id+'"]').addClass('active'); 
                
                let activeMenu = $(".steps-menu__item a.active").parent().index();
-               // let activeMenu = $(".steps-menu__item a.active").parent().index() + 1;
+
                switch (activeMenu) {
                   case 0:
                      $('.steps-menu__element').css('transform', `translateY(${activeMenu * 54}px)`)
@@ -38,15 +40,11 @@
             }
          })
       });
-
-      function moveActiveBar() {
-
-      }
       
-      $(".steps-menu__item").on("click","a", function (event) {
-         
+      $(".steps-menu__item").on("click", "a", function (event) {  
+
          let activeMenu = $(this).parent().index();
-         // let activeMenu = $(".steps-menu__item a.active").parent().index() + 1;
+         
          switch (activeMenu) {
             case 0:
                $('.steps-menu__element').css('transform', `translateY(${activeMenu * 54}px)`)
@@ -76,7 +74,11 @@
       });
 
 
-});
+
+
+
+      
+   });
 })(jQuery);
 
 
