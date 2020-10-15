@@ -1,2 +1,3 @@
 # MNTN
- Simple langing page
+ Simple responsive landing page
+ https://blackwh1te.github.io/MNTN/
