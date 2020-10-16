@@ -549,7 +549,7 @@ a:hover:before {
     padding-left: 0;
     font-size: 50px;
     line-height: normal;
-    font-weight: 50;
+    font-weight: 500;
     border-bottom: 2px solid #FBD784;
   }
   .step .title:before {
